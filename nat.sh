@@ -106,6 +106,5 @@ iptables -t nat -D PREROUTING -p tcp -m set --match-set rtocn dst -j REDIRECT --
 iptables -t nat -D OUTPUT -p tcp -m set --match-set rtocn dst -j REDIRECT --to-port 1080
 iptables -t nat -A PREROUTING -p tcp -m set --match-set rtocn dst -j REDIRECT --to-port 1080
 iptables -t nat -A OUTPUT -p tcp -m set --match-set rtocn dst -j REDIRECT --to-port 1080
-logger -t "【fakeincn】" "优酷IP规则设置完成"
 
 service restart_dnsmasq
