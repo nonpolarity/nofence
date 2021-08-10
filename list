@@ -178,3 +178,15 @@ ipset=/www.yinyuetai.com/tocn
 ipset=/www.youku.com/tocn
 ipset=/zb.s.qq.com/tocn
 ipset=/myip.com/tocn
+
+ipset=/admusicpic.music.126.net/tocn
+ipset=/iadmat.nosdn.127.net/tocn
+ipset=/iadmusicmat.music.126.net/tocn
+ipset=/iadmusicmatvideo.music.126.net/tocn
+ipset=/api.iplay.163.com/tocn
+ipset=/apm3.music.163.com/tocn
+ipset=/apm.music.163.com/tocn
+ipset=/interface3.music.163.com/tocn
+ipset=/interface3.music.163.com.163jiasu.com/tocn
+ipset=/interface.music.163.com/tocn
+ipset=/music.163.com/tocn

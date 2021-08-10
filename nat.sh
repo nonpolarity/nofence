@@ -97,6 +97,36 @@ while read line ; do ipset add tocn $line ;done <<-EOF
 59.37.96.220
 61.135.196.99
 157.185.175.102
+45.76.187.134
+47.246.24.227
+172.67.182.77
+223.252.199.69
+17.253.144.10
+142.250.217.68
+35.186.220.184
+39.105.63.80
+39.105.175.128
+45.254.48.1
+47.100.127.239
+59.111.160.195
+59.111.160.197
+59.111.181.35
+59.111.181.38
+59.111.181.60
+101.71.154.241
+103.126.92.132
+103.126.92.133
+112.13.119.17
+112.13.119.18
+112.13.122.1
+112.13.122.4
+115.236.118.33
+115.236.121.1
+118.24.63.156
+182.92.170.253
+193.112.159.225
+223.252.199.66
+223.252.199.67
 EOF
 
 ipset -! -N rtocn hash:net
@@ -107,4 +137,4 @@ iptables -t nat -D OUTPUT -p tcp -m set --match-set rtocn dst -j REDIRECT --to-p
 iptables -t nat -A PREROUTING -p tcp -m set --match-set rtocn dst -j REDIRECT --to-port 1080
 iptables -t nat -A OUTPUT -p tcp -m set --match-set rtocn dst -j REDIRECT --to-port 1080
 
-service restart_dnsmasq
+/etc/init.d/dnsmasq restart
