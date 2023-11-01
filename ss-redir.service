@@ -1,0 +1,17 @@
+[Unit]
+Description=ss-redir
+Requires=dnsmasq.service
+After=network.target
+Before=nextcloud-web.service
+
+[Service]
+ExecStartPre=/bin/bash /etc/shadowsocks/nat.sh
+ExecStart=ss-redir -c /etc/shadowsocks/shadowsocks.json -v
+KillMode=process
+Type=simple
+Restart=on-failure
+
+
+[Install]
+WantedBy=default.target
+RequiredBy=network.target
