@@ -1,4 +1,4 @@
-This repo is to enable ss-redir on Entware.
+This repo is to enable ss-redir on Entware / OpenWRT / Ubuntu.
 
 The main idea is to use ss-redir to reroute traffics to server in China.
 The specified ips/domains are in nat.sh and list.
